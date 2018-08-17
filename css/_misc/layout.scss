@@ -4,21 +4,30 @@ html, body {
 }
 
 body {
-  font-family: "GothamPro", sans-serif;
+  font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  -webkit-font-smoothing: antialiased; /*Safari/Chrome: only on Mac OS X/macOS: Smooth the font on the level of the pixel, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter.*/
-  -moz-osx-font-smoothing: grayscale; /*Firefox: only on Mac OS X/macOS: Render text with grayscale antialiasing, as opposed to the subpixel. Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter.*/
-  /* font-size: ;*/
-  line-height: 1.42; /* em */
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  line-height: 1.42;
+  color: black;
 }
 
 .wrapper {
+  position: relative;
   min-height: 100%;
-  min-width: 100%;
+  width: 100%;
+  min-width: 940px + 20px;
   overflow: hidden;
 }
-
+.container {
+  margin: 0 auto;
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;  
+}
 // tag styles reset
 
 button:hover {

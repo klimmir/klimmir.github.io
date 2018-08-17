@@ -1,0 +1,9 @@
+.hero {
+    background: url('../img/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.hero-img::before {
+    content: "";
+    // background-image: url("../img/icons/drops.png");
+}
