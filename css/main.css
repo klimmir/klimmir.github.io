@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -301,9 +302,9 @@ template {
 [hidden] {
   display: none; }
 
-html, body {
+body {
   width: 100%;
-  height: 100%; }
+  min-height: 100%; }
 
 body {
   font-size: 16px;
@@ -364,9 +365,49 @@ table {
 
 .hero {
   background: url("../img/hero-bg.jpg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100%; }
 
-.hero-img::before {
-  content: ""; }
+.header, .header__buttons, .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header__buttons {
+  margin-left: 60px;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.menu__item {
+  padding-right: 15px;
+  padding-top: 10px; }
+
+.order {
+  margin-left: 15px;
+  padding-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #e45028;
+  width: 97px;
+  height: 35px;
+  text-align: center; }
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none; }
+
+.menu__item::before {
+  content: "•";
+  color: #ffffff;
+  padding-right: 10px; }
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.hero__subtitle {
+  color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */
